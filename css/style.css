@@ -1,0 +1,59 @@
+body,button{
+    font-family: 'Gloria Hallelujah', 'Verdana', sans-serif;
+}
+.card {
+    float: left;
+    width: 20%;
+    height: 25%;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    background-image: url('pattern.png');
+}
+
+.open{
+    background-color: white;
+    background-image: none;
+}
+
+.game{
+    position:absolute;
+    margin-top: 25px;
+    left:0;
+    width:100%;
+}
+
+.game-info{
+    width:600px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.board{
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+}
+
+.cardType{
+    position: relative;
+    top:35%;
+    visibility: hidden;
+}
+
+.cardTypeVisible{
+    visibility: visible;
+}
+
+.btn-restart{
+    margin-top: 480px;
+}
+
+#score{
+    float:left;
+}
+
+#timer{
+    float:right;
+}

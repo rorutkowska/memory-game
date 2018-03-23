@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memory game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" type="application/javascript"></script>
+        <script type="application/javascript" src="js/cards.js"></script>
+    </head>
+    <body>
+        <h1 class="has-text-primary has-text-centered is-size-2">Memory game</h1>
+        <div class="game">
+            <div class="game-info">
+                <div id="score"><h3 class="score">Score : <span id="score-val">0</span></h3></div>
+                <div id="timer"> <span id="minutes"></span>:<span id="seconds"></span></div>
+            </div>
+            <div class="board">  
+            </div>
+        </div>
+        <div class="has-text-centered">
+            <button onclick="startGame();" class="button is-primary is-rounded btn-restart">Restart</button>
+        </div>
+
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <article class="message is-primary">
+                    <div class="message-header">
+                        <p>Congratulations!</p>
+                    </div>
+                    <div class="message-body">
+                        You have won!
+                    </div>
+                </article>     
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="hideModal();"></button>
+        </div>
+    </body>
+</html>
